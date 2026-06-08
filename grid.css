@@ -69,21 +69,29 @@ nav ul li:hover {
   transition: 0.6s;
   align-items: center;
   justify-content: flex-end;
-  top: 40%;
+  transform: translateY(-50%);
   transition: 0.6s;
+  left: 0;
+  top: 50%;
 }
 .black {
+  border: 2px solid;
   background-color: rgba(0, 0, 0, 0.692);
   width: 0%;
   height: 70px;
   position: absolute;
-
-  top: 40%;
-
+  top: 50%;
+  transform: translateY( -50%);
   display: flex;
   align-items: center;
-  right: 0%;
+  right: 0;
   transition: 0.6s;
+}
+.img-box:hover .black {
+  width: 50%;
+}
+.img-box:hover .pink {
+  width: 50%;
 }
 .img-box {
   position: relative;
@@ -99,11 +107,11 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
-  opacity: 0;
+  /* opacity: 0; */
   width: max-content;
   transition: 0.6s;
   border: 2px solid;
@@ -133,19 +141,9 @@ nav ul li:hover {
   background-color: white;
   height: 50px;
 }
-.img-box:hover .black {
-  margin-left: 0;
-  width: 50%;
-}
-.img-box:hover .pink {
-  width: 50%;
-  margin-left: 0;
-}
 
 .img-box:hover .box-p {
   opacity: 1;
-  margin-top: 0px;
-  transform: translate(-50%, -50%);
 }
 
 .box2:hover {
